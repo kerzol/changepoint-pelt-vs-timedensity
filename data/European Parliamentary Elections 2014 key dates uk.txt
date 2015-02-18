@@ -1,0 +1,20 @@
+# European Parliamentary Elections 2014: key events in UK
+# by by Alex Frame
+# date  event
+"2014-05-2 00:00:00 PST" "EU ban on imported mangoes!"
+"2014-05-6 00:00:00 PST" "Boko Haram kidnaps Nigerian schoolgirls. #BringBackOurGirls"
+"2014-05-11 00:00:00 PST" "Cameron pledges in/out referendum on EU before 2017"
+"2014-05-12 00:00:00 PST" "Donetsk region of Ukraine asks to join Russia in referendum."
+"2014-05-13 00:00:00 PST" "William Hague, Foreign Secretary, spoke in the Houses of Parliament about the situation in Ukraine."
+"2014-05-14 00:00:00 PST" "UKIP criticized for the candidacy of David Jones, a former Orangeman (pro-catholique en Irlande du Nord)."
+"2014-05-15 00:00:00 PST" "presidential debate with the five leading candidates for the presidency of the European Commission, from 21.00 to 22.30. Hashtags #TellEurope #EP2014"
+"2014-05-20 00:00:00 PST" "Prince Charles compares Putin to Hitler"
+"2014-05-20 00:00:00 PST" "UKIP criticised for posters which use photos of World War 1 graves to criticise immigration."
+"2014-05-20 00:00:00 PST" "UKIP organises mini-carnaval in Croydon to celebrate multiculturalism, but coloured band refuses to play music."
+"2014-05-21 00:00:00 PST" "Nigel Farage suggests possible alliance with Marine Le Pen in European Parliament."
+"2014-05-22 00:00:00 PST" "Election day (European and Local elections)."
+"2014-05-22 00:00:00 PST" "UKIP hashtag is hijacked by anti-UKIP protesters on Twitter #whyI’mvotingUKIP"
+"2014-05-23 00:00:00 PST" "UKIP does well in local election results"
+"2014-05-25 00:00:00 PST" "proclamation of European election results (for UK too)."
+"2014-05-27 00:00:00 PST" "Nick Clegg states that he will remain leader of the Liberal Democrats."
+"2014-05-28 00:00:00 PST" "French police destroy Calais migrant camp."
