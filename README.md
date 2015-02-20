@@ -26,23 +26,36 @@ install.packages('pastecs')
 # Examples
 
 
-Les timestamps des  tweets sont représenté par la ligne  grisée en bas
-de la  figure.  Plus il  y a des tweets,  plus la couleur  est foncée.
-Les    lignes     noires    pointillées    sont     [les    événements
-réels](./data/European Parliamentary Elections 2014 key dates uk.txt).
-Les lignes  rouges pointillées  correspondent aux  événements détectés
-par les  algorithmes.  Les  courbes noires  montrent la  fréquence des
-tweets (Changepoint-PELT)  ou la densité  temporelle.  Dans le  cas de
-Changepoint-PELT   les  lignes   rouges  horizontales   indiquent  les
-intervalles stables.
+[Les   timestamps   des  tweets](./data/tweets_timestamp_count)   sont
+représenté par la ligne  grisée en bas de la figure.  Plus  il y a des
+tweets, plus  la couleur  est foncée.   Les lignes  noires pointillées
+sont  [les événements  réels](./data/European Parliamentary  Elections
+2014 key  dates uk.txt).  Les lignes  rouges pointillées correspondent
+aux  événements  détectés par  les  algorithmes.   Les courbes  noires
+montrent  la fréquence  des  tweets (Changepoint-PELT)  ou la  densité
+temporelle.   Dans  le  cas  de  Changepoint-PELT  les  lignes  rouges
+horizontales indiquent les intervalles stables.
+
+
+*Time-density*
+                  | Small bandwith                                                         | Large bandwith
+----------------- | ---------------------------------------------------------------------- | -----------------------------------------------------------------------------
+Normal kernel     | <img src="fig/timedensity-small.png" height="180px">                   | <img src="fig/timedensity-large.png" height="180px">
+Triangular kernel | <img src="fig/timedensity-small-triangular-kernel.png" height="180px"> | <img src="fig/timedensity-large-triangular-kernel.png" height="180px">
+----------------- | ---------------------------------------------------------------------- | -----------------------------------------------------------------------------
+
+
+*Changepoint-PELT*
+
+                     | 6 hours                                                                | 48 hours
+-------------------- | ---------------------------------------------------------------------- | -----------------------------------------------------------------------------
+Normal distribution  | <img src="fig/changepoint-pelt-normal-6hours.png" height="180px">      | <img src="fig/changepoint-pelt-normal-48hours.png" height="180px">
+Gamma  distribution  | <img src="fig/changepoint-pelt-gamma-6hours.png" height="180px">       | <img src="fig/changepoint-pelt-gamma-48hours.png" height="180px">
+
+
 
 # Time-density
 
-
-                  | Small bandwith   | Large bandwith
------------------ | ---------------- | --------------------
-Normal kernel     | ![Time-density: large bandwith](fig/timedensity-small.png) | ![Time-density: large bandwith](fig/timedensity-big.png)
-Triangular kernel | ![Time-density: large bandwith](fig/timedensity-small-triangular-kernel.png) | ![Time-density: large bandwith](fig/timedensity-big-triangular-kernel.png)
 
 ## Normal kernel. Large bandwith
 
