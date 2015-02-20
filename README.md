@@ -13,6 +13,14 @@
     ##################################################################################
 
 
+
+# R scripts and figures for our paper 
+
+**Détection d'événements basée sur la  densité temporelle des tweets :
+une  application  aux  élections   européennes  de  2014**  —  *Sergey
+Kirgizov, Ian Basaille-Gahitte, Eric Leclercq1 and Alex Frame*
+
+
 # Before use
 
 
