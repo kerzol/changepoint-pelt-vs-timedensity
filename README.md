@@ -40,6 +40,7 @@ horizontales indiquent les intervalles stables.
 ## Overview
 
 ### Time-density
+
                   | Small bandwith                                                         | Large bandwith
 ----------------- | ---------------------------------------------------------------------- | -----------------------------------------------------------------------------
 Normal kernel     | <img src="fig/timedensity-small.png" height="180px">                   | <img src="fig/timedensity-large.png" height="180px">
