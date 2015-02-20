@@ -43,8 +43,8 @@ horizontales indiquent les intervalles stables.
 
                   | Small bandwith                                                         | Large bandwith
 ----------------- | ---------------------------------------------------------------------- | -----------------------------------------------------------------------------
-Normal kernel     | <img src="fig/timedensity-small.png" height="180px">                   | <img src="fig/timedensity-large.png" height="180px">
-Triangular kernel | <img src="fig/timedensity-small-triangular-kernel.png" height="180px"> | <img src="fig/timedensity-large-triangular-kernel.png" height="180px">
+Normal kernel     | <img src="fig/timedensity-small.png" height="180px">                   | <img src="fig/timedensity-big.png" height="180px">
+Triangular kernel | <img src="fig/timedensity-small-triangular-kernel.png" height="180px"> | <img src="fig/timedensity-big-triangular-kernel.png" height="180px">
 
 
 
