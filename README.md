@@ -41,6 +41,8 @@ horizontales indiquent les intervalles stables.
 
 ### Time-density
 
+Triangular and normal kernels give very **simmilar results**.
+
                   | Small bandwith                                                         | Large bandwith
 ----------------- | ---------------------------------------------------------------------- | -----------------------------------------------------------------------------
 Normal kernel     | <img src="fig/timedensity-small.png" height="170px">                   | <img src="fig/timedensity-big.png" height="170px">
@@ -49,6 +51,9 @@ Triangular kernel | <img src="fig/timedensity-small-triangular-kernel.png" heigh
 
 
 ### Changepoint-PELT
+
+Normal and Gamma distributions give very **different results**.
+
 
                      | 6 hours                                                                | 48 hours
 -------------------- | ---------------------------------------------------------------------- | -----------------------------------------------------------------------------
