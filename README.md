@@ -67,7 +67,7 @@ add.real.events ()
 add.timedensity (uk, bw=500000, kernel='triangular')
 ```
 
-![Time-density: large bandwith](fig/timedensity-big-triangular.png)
+![Time-density: large bandwith](fig/timedensity-big-triangular-kernel.png)
 
 ## Triangular kernel. Small bandwith
 
@@ -76,7 +76,7 @@ plot.tweets (notevery(uk,2300))
 add.real.events ()
 add.timedensity (uk, bw=120000, kernel='triangular')
 ```
-![Time-density: large bandwith](fig/timedensity-small-triangular.png)
+![Time-density: large bandwith](fig/timedensity-small-triangular-kernel.png)
 
 
 
