@@ -45,7 +45,7 @@ horizontales indiquent les intervalles stables.
 ----------------- | ---------------------------------------------------------------------- | -----------------------------------------------------------------------------
 Normal kernel     | <img src="fig/timedensity-small.png" height="180px">                   | <img src="fig/timedensity-large.png" height="180px">
 Triangular kernel | <img src="fig/timedensity-small-triangular-kernel.png" height="180px"> | <img src="fig/timedensity-large-triangular-kernel.png" height="180px">
------------------ | ---------------------------------------------------------------------- | -----------------------------------------------------------------------------
+
 
 
 ### Changepoint-PELT
