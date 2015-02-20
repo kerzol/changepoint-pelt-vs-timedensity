@@ -28,6 +28,7 @@ Kirgizov, Ian Basaille-Gahitte, Eric Leclercq1 and Alex Frame*
 install.packages('changepoint')
 install.packages('strucchange')
 install.packages('pastecs')
+source('changepoint-vs-timedensity.r')
 ```
 
 
