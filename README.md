@@ -43,8 +43,8 @@ horizontales indiquent les intervalles stables.
 
                   | Small bandwith                                                         | Large bandwith
 ----------------- | ---------------------------------------------------------------------- | -----------------------------------------------------------------------------
-Normal kernel     | <img src="fig/timedensity-small.png" height="180px">                   | <img src="fig/timedensity-big.png" height="180px">
-Triangular kernel | <img src="fig/timedensity-small-triangular-kernel.png" height="180px"> | <img src="fig/timedensity-big-triangular-kernel.png" height="180px">
+Normal kernel     | <img src="fig/timedensity-small.png" height="170px">                   | <img src="fig/timedensity-big.png" height="170px">
+Triangular kernel | <img src="fig/timedensity-small-triangular-kernel.png" height="170px"> | <img src="fig/timedensity-big-triangular-kernel.png" height="170px">
 
 
 
@@ -52,8 +52,8 @@ Triangular kernel | <img src="fig/timedensity-small-triangular-kernel.png" heigh
 
                      | 6 hours                                                                | 48 hours
 -------------------- | ---------------------------------------------------------------------- | -----------------------------------------------------------------------------
-Normal distribution  | <img src="fig/changepoint-pelt-normal-6hours.png" height="180px">      | <img src="fig/changepoint-pelt-normal-48hours.png" height="180px">
-Gamma  distribution  | <img src="fig/changepoint-pelt-gamma-6hours.png" height="180px">       | <img src="fig/changepoint-pelt-gamma-48hours.png" height="180px">
+Normal distribution  | <img src="fig/changepoint-pelt-normal-6hours.png" height="170px">      | <img src="fig/changepoint-pelt-normal-48hours.png" height="170px">
+Gamma  distribution  | <img src="fig/changepoint-pelt-gamma-6hours.png" height="170px">       | <img src="fig/changepoint-pelt-gamma-48hours.png" height="170px">
 
 
 ## Time-density
