@@ -37,7 +37,9 @@ temporelle.   Dans  le  cas  de  Changepoint-PELT  les  lignes  rouges
 horizontales indiquent les intervalles stables.
 
 
-*Time-density*
+## Overview
+
+### Time-density
                   | Small bandwith                                                         | Large bandwith
 ----------------- | ---------------------------------------------------------------------- | -----------------------------------------------------------------------------
 Normal kernel     | <img src="fig/timedensity-small.png" height="180px">                   | <img src="fig/timedensity-large.png" height="180px">
@@ -45,7 +47,7 @@ Triangular kernel | <img src="fig/timedensity-small-triangular-kernel.png" heigh
 ----------------- | ---------------------------------------------------------------------- | -----------------------------------------------------------------------------
 
 
-*Changepoint-PELT*
+### Changepoint-PELT
 
                      | 6 hours                                                                | 48 hours
 -------------------- | ---------------------------------------------------------------------- | -----------------------------------------------------------------------------
@@ -53,11 +55,10 @@ Normal distribution  | <img src="fig/changepoint-pelt-normal-6hours.png" height=
 Gamma  distribution  | <img src="fig/changepoint-pelt-gamma-6hours.png" height="180px">       | <img src="fig/changepoint-pelt-gamma-48hours.png" height="180px">
 
 
+## Time-density
 
-# Time-density
 
-
-## Normal kernel. Large bandwith
+### Normal kernel. Large bandwith
 
 ```R
 plot.tweets (notevery(uk,2300))
@@ -67,7 +68,7 @@ add.timedensity (uk, bw=500000)
 
 ![Time-density: large bandwith](fig/timedensity-big.png)
 
-## Normal kernel. Small bandwith
+### Normal kernel. Small bandwith
 
 ```R
 plot.tweets (notevery(uk,2300))
@@ -77,7 +78,7 @@ add.timedensity (uk, bw=120000)
 ![Time-density: large bandwith](fig/timedensity-small.png)
 
 
-## Triangular kernel. Large bandwith
+### Triangular kernel. Large bandwith
 
 ```R
 plot.tweets (notevery(uk,2300))
@@ -87,7 +88,7 @@ add.timedensity (uk, bw=500000, kernel='triangular')
 
 ![Time-density: large bandwith](fig/timedensity-big-triangular-kernel.png)
 
-## Triangular kernel. Small bandwith
+### Triangular kernel. Small bandwith
 
 ```R
 plot.tweets (notevery(uk,2300))
@@ -98,9 +99,9 @@ add.timedensity (uk, bw=120000, kernel='triangular')
 
 
 
-# Changepoint-PELT
+## Changepoint-PELT
 
-## Normal distribution. Time-window's size is 6 hours
+### Normal distribution. Time-window's size is 6 hours
 
 ```R
 plot.tweets (notevery(uk,2300))
@@ -110,7 +111,7 @@ add.changepoints (uk, window = 6 * hour)
 
 ![Time-density: large bandwith](fig/changepoint-pelt-normal-6hours.png)
 
-## Normal distribution. Time-window's size is 48 hours
+### Normal distribution. Time-window's size is 48 hours
 
 ```R
 plot.tweets (notevery(uk,2300))
@@ -121,7 +122,7 @@ add.changepoints (uk, window = 48 * hour)
 ![Time-density: large bandwith](fig/changepoint-pelt-normal-48hours.png)
 
 
-## Gamma distribution. Time-window's size is 6 hours
+### Gamma distribution. Time-window's size is 6 hours
 
 ```R
 plot.tweets (notevery(uk,2300))
@@ -131,7 +132,7 @@ add.changepoints (uk, window = 6 * hour, test.stat = "Gamma")
 
 ![Time-density: large bandwith](fig/changepoint-pelt-gamma-6hours.png)
 
-## Gamma distribution. Time-window's size is 48 hours
+### Gamma distribution. Time-window's size is 48 hours
 
 ```R
 plot.tweets (notevery(uk,2300))
