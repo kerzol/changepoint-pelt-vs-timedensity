@@ -39,6 +39,11 @@ intervalles stables.
 # Time-density
 
 
+                  | Small bandwith   | Large bandwith
+----------------- | ---------------- | --------------------
+Normal kernel     | ![Time-density: large bandwith](fig/timedensity-small.png) | ![Time-density: large bandwith](fig/timedensity-big.png)
+Triangular kernel | ![Time-density: large bandwith](fig/timedensity-small-triangular-kernel.png) | ![Time-density: large bandwith](fig/timedensity-big-triangular-kernel.png)
+
 ## Normal kernel. Large bandwith
 
 ```R
