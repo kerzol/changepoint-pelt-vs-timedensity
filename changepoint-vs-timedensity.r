@@ -6,7 +6,7 @@
 ##    ,                 .           ,    
 ##   -+-*._ _  _  ___  _| _ ._  __*-+-  .
 ##    | |[ | )(/,     (_](/,[ )_) | | \_|
-##                                  ._|
+##                                    ._|
 ##
 ##   by Sergey Kirgizov
 #####
@@ -45,7 +45,6 @@ plot.tweets <- function(data, ...) {
                las=1,
                cex.axis=0.5)
 }
-plot.tweets (notevery(uk,2000))
 
 
 add.real.events <- function()  {
@@ -56,17 +55,15 @@ add.real.events <- function()  {
 ##  points(as.integer(events$date),events$count/10^2,col='black',pch=17)
 }
 
-plot.tweets (notevery(uk,5000))
-add.real.events ()
 
 ## time-density
 ##########################################
-add.timedensity <- function (data, bw = "nrd0", ...) {
+add.timedensity <- function (data, bw = "nrd0", kernel="gaussian", ...) {
   x <- data$timestamp0
   y <- data$count
 
   ## density
-  density(x,bw=bw) -> ddd
+  density(x, bw=bw, kernel=kernel) -> ddd
   lines (todate.PST(ddd$x), ddd$y * 10**6, ...)
 
   ## difference
@@ -83,33 +80,6 @@ add.timedensity <- function (data, bw = "nrd0", ...) {
   ##  abline (v=x[1],lwd=2,col='gray')
   ##  abline (v=x[length(x)],lwd=2,col='gray')
 }
-
-
-pdf("fig/timedensity-big.pdf",
-    height=2,width=5)
-
-par(mfrow=c(1,1))
-par(mar=c(3,3,0,0))
-plot.tweets (notevery(uk,2300))
-add.real.events ()
-add.timedensity (uk, bw=500000)
-title (ylab='Densité temporelle', cex.lab=0.7, line=1) 
-
-dev.off()
-
-
-pdf("fig/timedensity-small.pdf",
-    height=2,width=5)
-
-par(mar=c(3,3,0,0))
-plot.tweets (notevery(uk,2300))
-add.real.events ()
-add.timedensity (uk, bw=120000)
-title (ylab='Densité temporelle', cex.lab=0.7, line=1) 
-
-dev.off()
-
-
 
 
 ## breakpoints
@@ -153,31 +123,4 @@ add.changepoints <- function(data, window =  6 * hour, test.stat = "Normal") {
   par (new=T)
   plot(cpt.results, xlab='', xaxt='n', ylab="", yaxt='n')
 }
-
-
-pdf("fig/changepoint-pelt-normal-6hours.pdf",
-    height=2,width=5)
-
-par(mfrow=c(1,1))
-par(mar=c(3,3,0,0))
-plot.tweets (notevery(uk,2300))
-add.real.events ()
-add.changepoints (uk, window = 6 * hour)
-title (ylab='fréquence des tweets', cex.lab=0.7, line=1)
-
-dev.off()
-
-
-pdf("fig/changepoint-pelt-normal-48hours.pdf",
-    height=2,width=5)
-
-par(mfrow=c(1,1))
-par(mar=c(3,3,0,0))
-plot.tweets (notevery(uk,2300))
-add.real.events ()
-add.changepoints (uk, window = 48 * hour)
-title (ylab='fréquence des tweets', cex.lab=0.7, line=1)
-
-dev.off()
-
 
