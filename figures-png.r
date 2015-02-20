@@ -29,6 +29,32 @@ title (ylab='Densité temporelle', cex.lab=0.7, line=1)
 dev.off()
 
 
+png("fig/timedensity-big-triangular-kernel.png",
+    height=h,width=w)
+
+par(mfrow=c(1,1))
+par(mar=c(3,3,0,0))
+plot.tweets (notevery(uk,2300))
+add.real.events ()
+add.timedensity (uk, bw=500000, kernel='triangular')
+title (ylab='Densité temporelle', cex.lab=0.7, line=1) 
+
+dev.off()
+
+
+png("fig/timedensity-small-triangular-kernel.png",
+    height=h,width=w)
+
+par(mar=c(3,3,0,0))
+plot.tweets (notevery(uk,2300))
+add.real.events ()
+add.timedensity (uk, bw=120000, kernel='triangular')
+title (ylab='Densité temporelle', cex.lab=0.7, line=1) 
+
+dev.off()
+
+
+
 png("fig/changepoint-pelt-normal-6hours.png",
     height=h,width=w)
 
