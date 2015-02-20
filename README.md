@@ -45,8 +45,8 @@ Triangular and normal kernels give very **simmilar results**.
 
                   | Small bandwith                                                      | Large bandwith
 ----------------- | ------------------------------------------------------------------- | -----------------------------------------------------------------------------
-Normal kernel     | <img src="fig/timedensity-small.png" width="50%">                   | <img src="fig/timedensity-big.png" width="50%">
-Triangular kernel | <img src="fig/timedensity-small-triangular-kernel.png" width="50%"> | <img src="fig/timedensity-big-triangular-kernel.png" width="50%">
+Normal kernel     | <img src="fig/timedensity-small.png" width="100%">                   | <img src="fig/timedensity-big.png" width="100%">
+Triangular kernel | <img src="fig/timedensity-small-triangular-kernel.png" width="100%"> | <img src="fig/timedensity-big-triangular-kernel.png" width="100%">
 
 
 
@@ -57,8 +57,8 @@ Normal and Gamma distributions give very **different results**.
 
                      | 6 hours                                                             | 48 hours
 -------------------- | ------------------------------------------------------------------- | -----------------------------------------------------------------------------
-Normal distribution  | <img src="fig/changepoint-pelt-normal-6hours.png" width="50%">      | <img src="fig/changepoint-pelt-normal-48hours.png" width="50%">
-Gamma  distribution  | <img src="fig/changepoint-pelt-gamma-6hours.png" width="50%">       | <img src="fig/changepoint-pelt-gamma-48hours.png" width="50%">
+Normal distribution  | <img src="fig/changepoint-pelt-normal-6hours.png" width="100%">      | <img src="fig/changepoint-pelt-normal-48hours.png" width="100%">
+Gamma  distribution  | <img src="fig/changepoint-pelt-gamma-6hours.png" width="100%">       | <img src="fig/changepoint-pelt-gamma-48hours.png" width="100%">
 
 
 ## Time-density
