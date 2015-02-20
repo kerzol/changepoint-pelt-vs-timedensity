@@ -43,10 +43,10 @@ horizontales indiquent les intervalles stables.
 
 Triangular and normal kernels give very **simmilar results**.
 
-                  | Small bandwith                                                         | Large bandwith
------------------ | ---------------------------------------------------------------------- | -----------------------------------------------------------------------------
-Normal kernel     | <img src="fig/timedensity-small.png" height="170px">                   | <img src="fig/timedensity-big.png" height="170px">
-Triangular kernel | <img src="fig/timedensity-small-triangular-kernel.png" height="170px"> | <img src="fig/timedensity-big-triangular-kernel.png" height="170px">
+                  | Small bandwith                                                      | Large bandwith
+----------------- | ------------------------------------------------------------------- | -----------------------------------------------------------------------------
+Normal kernel     | <img src="fig/timedensity-small.png" width="50%">                   | <img src="fig/timedensity-big.png" width="50%">
+Triangular kernel | <img src="fig/timedensity-small-triangular-kernel.png" width="50%"> | <img src="fig/timedensity-big-triangular-kernel.png" width="50%">
 
 
 
@@ -55,10 +55,10 @@ Triangular kernel | <img src="fig/timedensity-small-triangular-kernel.png" heigh
 Normal and Gamma distributions give very **different results**.
 
 
-                     | 6 hours                                                                | 48 hours
--------------------- | ---------------------------------------------------------------------- | -----------------------------------------------------------------------------
-Normal distribution  | <img src="fig/changepoint-pelt-normal-6hours.png" height="170px">      | <img src="fig/changepoint-pelt-normal-48hours.png" height="170px">
-Gamma  distribution  | <img src="fig/changepoint-pelt-gamma-6hours.png" height="170px">       | <img src="fig/changepoint-pelt-gamma-48hours.png" height="170px">
+                     | 6 hours                                                             | 48 hours
+-------------------- | ------------------------------------------------------------------- | -----------------------------------------------------------------------------
+Normal distribution  | <img src="fig/changepoint-pelt-normal-6hours.png" width="50%">      | <img src="fig/changepoint-pelt-normal-48hours.png" width="50%">
+Gamma  distribution  | <img src="fig/changepoint-pelt-gamma-6hours.png" width="50%">       | <img src="fig/changepoint-pelt-gamma-48hours.png" width="50%">
 
 
 ## Time-density
