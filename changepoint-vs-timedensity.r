@@ -43,7 +43,8 @@ plot.tweets <- function(data, ...) {
                at=at,
                labels=format(at,"%b-%d"),
                las=1,
-               cex.axis=0.5)
+###            cex.axis=0.5)
+               cex.axis=1)
 }
 
 
@@ -76,6 +77,15 @@ add.timedensity <- function (data, bw = "nrd0", kernel="gaussian", ...) {
   for (d in ddd$x[2:length(ddd$x)][tp$tppos]) {
     abline (v=d, col='red', lty=5, lwd=2)
   }
+
+  ## turnpoints of first derivative
+  require(pastecs)
+  tp<-turnpoints(ts(diff(ddd$y)))
+
+  for (d in ddd$x[2:length(ddd$x)][tp$tppos]) {
+    abline (v=d, col='blue', lty=5, lwd=2)
+  }
+  
   ## borders
   ##  abline (v=x[1],lwd=2,col='gray')
   ##  abline (v=x[length(x)],lwd=2,col='gray')
