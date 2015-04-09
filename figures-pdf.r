@@ -1,5 +1,13 @@
 ## Generate pdfs for paper
 ###############################
+source('changepoint-vs-timedensity.r')
+
+## load tweets
+#######################################
+
+read.table('data/tweets_timestamp_count') -> uk
+colnames(uk) <- c('timestamp0','count')
+uk$timestamp <- todate.PST(uk$timestamp0)
 
 pdf("fig/timedensity-big.pdf",
     height=2,width=5)

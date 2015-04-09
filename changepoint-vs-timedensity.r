@@ -15,13 +15,6 @@
 todate.PST <- function (x) as.POSIXct(x, origin="1970-01-01", tz="PST")
 notevery <- function (data, howmany = 4000) data[seq(1,nrow(data),floor(nrow(data)/howmany)),]
 
-## load tweets
-#######################################
-
-read.table('data/tweets_timestamp_count') -> uk
-colnames(uk) <- c('timestamp0','count')
-uk$timestamp <- todate.PST(uk$timestamp0)
-
 ## load real events
 #######################################
 events <- read.table('data/European Parliamentary Elections 2014 key dates uk.txt',
@@ -33,11 +26,11 @@ events$count <- 1:nrow(events)
 
 ## plot functions
 #######################################
-plot.tweets <- function(data, ...) {
+plot.tweets <- function(data, ylim=c(0,1), ...) {
   x <- data$timestamp0
   y <- rep(0,length(x))
-  plot (x, y, xaxt="n",xlab="",ylab="", yaxt="n",
-        pch = '|', col = rgb(0,0,0,0.07), ylim=c(0,1), ...)
+  plot (x, y, xaxt="n", xlab="", ylab="", yaxt="n",
+        pch = '|', col = rgb(0,0,0,0.07), ylim=ylim, ...)
   at <- todate.PST(format(data$timestamp[seq(1, length(data$timestamp), 400)],"%Y-%m-%d 00:00:00"))
   axis.POSIXct(1,
                at=at,
@@ -58,6 +51,8 @@ add.real.events <- function()  {
 
 
 ## time-density
+## returns: turnpoints of density and its derivative
+## side-effect: plot
 ##########################################
 add.timedensity <- function (data, bw = "nrd0", kernel="gaussian", ...) {
   x <- data$timestamp0
@@ -70,22 +65,29 @@ add.timedensity <- function (data, bw = "nrd0", kernel="gaussian", ...) {
   ## difference
   ##  lines (ddd$x[2:length(ddd$x)], diff(ddd$y * 10**6), col='red')
 
+  ### object to return
+  ret <- NULL
+  
   ## turnpoints
   require(pastecs)
   tp<-turnpoints(ts(ddd$y))
-
-  for (d in ddd$x[2:length(ddd$x)][tp$tppos]) {
+  ret$turnpoints <- ddd$x[2:length(ddd$x)][tp$tppos]
+  
+  for (d in ret$turnpoints) {
     abline (v=d, col='red', lty=5, lwd=2)
   }
+
 
   ## turnpoints of first derivative
   require(pastecs)
   tp<-turnpoints(ts(diff(ddd$y)))
-
-  for (d in ddd$x[2:length(ddd$x)][tp$tppos]) {
-    abline (v=d, col='blue', lty=5, lwd=2)
-  }
+  ret$turnpoints2 <- ddd$x[2:length(ddd$x)][tp$tppos]
   
+  for (d in ret$turnpoints2) {
+    abline (v=d, col='orange', lty=5, lwd=2)
+  }
+
+  ret
   ## borders
   ##  abline (v=x[1],lwd=2,col='gray')
   ##  abline (v=x[length(x)],lwd=2,col='gray')
@@ -104,10 +106,6 @@ add.breakpoints <- function(data, h=.1) {
   yy <- y * 0.1
   abline (v=x[breakpoints(yy~xx,h)$breakpoints])
 }
-plot.tweets (notevery(uk,2300))
-add.real.events ()
-add.breakpoints (notevery(uk, 400), h = 0.4)
-
 
 ## changepoints
 ###########################

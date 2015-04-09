@@ -1,5 +1,13 @@
 ## Generate pngs for github
 ###############################
+source('changepoint-vs-timedensity.r')
+
+## load tweets
+#######################################
+
+read.table('data/tweets_timestamp_count') -> uk
+colnames(uk) <- c('timestamp0','count')
+uk$timestamp <- todate.PST(uk$timestamp0)
 
 h=400
 w=800
