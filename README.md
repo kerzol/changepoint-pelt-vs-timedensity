@@ -14,11 +14,11 @@
 
 
 
-# R scripts and figures for our paper 
+# R scripts and figures for our paper
 
 **Détection d'événements basée sur la  densité temporelle des tweets :
 une  application  aux  élections   européennes  de  2014**  —  *Sergey
-Kirgizov, Ian Basaille-Gahitte, Eric Leclercq1 and Alex Frame*
+Kirgizov, Ian Basaille-Gahitte, Eric Leclercq and Alex Frame*
 
 
 # Before use
